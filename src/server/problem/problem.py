@@ -331,7 +331,10 @@ class GenericProblem:
         # assume (rather arbitrarily) that root is an active node
         if root_allow_all and not root_constraints:
             root_constraints = active_constraints
-            alphabet = set(flatten(active_constraints + passive_constraints)) - {" "}
+            alphabet = set(flatten(active_constraints + passive_constraints)) - {
+                " ",
+                ":",
+            }
             self.root_constraints = tuple(
                 ["".join(alphabet) for _ in root_constraints[0].split(" ")]
             )
@@ -461,7 +464,7 @@ class GenericProblem:
                     + self.leaf_constraints
                 )
             )
-            - {" "}
+            - {" ", ":"}
         )
 
     def get_active_degree(self) -> int:
