@@ -31,6 +31,14 @@ POSTGRES_HOST=db
 
 ### Running locally
 
+0. Populate `.env` with the following content:
+
+```
+POSTGRES_PASSWORD='postgres'
+POSTGRES_PASSWORD_UNQUOTED=postgres
+POSTGRES_HOST=db
+```
+
 To run the project locally in production mode, do the following:
 
 1. Generate a dummy certificate (this step only needs to be done
@@ -57,6 +65,8 @@ Yes, just type it when presented with the warning screen,
 and Chrome should let you in. See e.g. [https://dev.to/brettimus/this-is-unsafe-and-a-bad-idea-5ej4](https://dev.to/brettimus/this-is-unsafe-and-a-bad-idea-5ej4)
 
 ### Developing locally
+
+
 
 #### Starting up the client
 
@@ -93,7 +103,7 @@ cd server
 2. Install the dependencies
 ```
 poetry shell
-poetry install 
+poetry install
 ```
 To exit the poetry shell later, issue `exit` command.
 
