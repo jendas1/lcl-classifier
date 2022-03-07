@@ -38,7 +38,11 @@ export async function fetchJson<T>(
     const camelized = keysToCamel(json)
     return validateResponse(camelized, codec)
   } catch (e) {
-    alert(e.message)
+    let errorMessage = 'Failed to do something exceptional'
+    if (e instanceof Error) {
+      errorMessage = e.message
+    }
+    alert(errorMessage)
     return undefined
   }
 }
