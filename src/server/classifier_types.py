@@ -7,3 +7,4 @@ class Classifier(Enum):
     RT = "rt"
     TLP = "tlp"
     RE = "re"
+    POLY = "poly"

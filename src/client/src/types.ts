@@ -10,7 +10,7 @@ export enum Complexity {
   Global = '(n)',
   Unsolvable = 'unsolvable',
 }
-export const ComplexityCodec = fromEnum<Complexity>('Complexity', Complexity)
+export const ComplexityCodec = t.string //fromEnum<Complexity>('Complexity', Complexity)
 
 const FlagsCodec = t.type(
   {

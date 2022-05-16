@@ -48,4 +48,12 @@ class ClassifyContext:
                 "Round Eliminator",
                 ["https://github.com/olidennis/round-eliminator"],
             ),
+            Classifier.POLY: Source(
+                "poly",
+                "Polynomial classifier",
+                [
+                    "https://arxiv.org/abs/2202.08544",
+                    "https://github.com/jendas1/poly-classifier",
+                ],
+            ),
         }

@@ -5,6 +5,7 @@ from .re_binding import classify as re_classify
 from .rt_binding import classify as rt_classify
 from .tlp_binding import classify as tlp_classify
 from .tlp_binding import batch_classify as tlp_batch_classify
+from .poly_binding import classify as poly_classify
 from .classify_context import ClassifyContext
 
 __all__ = [
@@ -15,5 +16,6 @@ __all__ = [
     "rt_classify",
     "tlp_classify",
     "tlp_batch_classify",
+    "poly_classify",
     "ClassifyContext",
 ]
